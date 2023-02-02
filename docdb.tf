@@ -7,3 +7,4 @@ resource "aws_docdb_cluster" "docdb" {
   preferred_backup_window = var.preferred_backup_window
   skip_final_snapshot     = var.skip_final_snapshot
 }
+
