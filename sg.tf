@@ -8,7 +8,7 @@ resource "aws_security_group" "allow_docdb" {
     from_port        = 27017
     to_port          = 27017
     protocol         = "tcp"
-    cidr_blocks      = local.app_subnet_cidr
+    cidr_blocks      = local.app_subnets_cidr
   }
 
   egress {
