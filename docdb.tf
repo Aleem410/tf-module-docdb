@@ -1,6 +1,6 @@
 resource "aws_docdb_subnet_group" "docdb" {
   name       = "${var.env}-docdb"
-  subnet_ids = local.app_subnets_cidr
+  subnet_ids = local.app_subnet_cidr
 
   tags = {
     Name = "${var.env}-docdb"
